@@ -40,6 +40,20 @@ SELECT * FROM Course;
 
 .quit
 
+## If sqlite3 CLI is unavailable
+
+Run the Python fallback demo from the project root:
+
+python run_demo.py
+
+This executes schema + seed + demo walkthrough and prints results in the terminal.
+
+For a live, manipulatable demo (menu-driven), run:
+
+python interactive_demo.py
+
+This lets you choose tasks, change IDs/inputs during presentation, and reset the database any time.
+
 
 ## Notes
 - Make sure SQLite is installed on your system
