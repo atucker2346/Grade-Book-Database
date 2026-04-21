@@ -17,9 +17,14 @@ CREATE TABLE Student (
 );
 
 CREATE TABLE Course (
-  course_id INTEGER PRIMARY KEY AUTOINCREMENT,
-  code      TEXT NOT NULL UNIQUE,
-  title     TEXT NOT NULL
+  course_id      INTEGER PRIMARY KEY AUTOINCREMENT,
+  department     TEXT NOT NULL,
+  course_number  INTEGER NOT NULL,
+  title          TEXT NOT NULL,
+  semester       TEXT NOT NULL,
+  year           INTEGER NOT NULL,
+  code           TEXT GENERATED ALWAYS AS (department || course_number) VIRTUAL,
+  UNIQUE (department, course_number, semester, year)
 );
 
 CREATE TABLE Enrollment (

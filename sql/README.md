@@ -20,6 +20,12 @@ Inside the SQLite prompt, execute:
 .read sql/03_show_tables.sql
 .read sql/04_queries_and_updates.sql
 
+For a clean presentation demo (tasks 3-12 with labeled output), run:
+
+.read sql/01_schema.sql
+.read sql/02_seed.sql
+.read sql/05_demo_walkthrough.sql
+
 
 ### 3. Verify the database
 You can check that everything loaded correctly by running:
@@ -39,3 +45,4 @@ SELECT * FROM Course;
 - Make sure SQLite is installed on your system
 - Run the scripts in the correct order to avoid errors
 - The seed file adds sample data for testing queries
+- See `sql/test_cases.md` for rubric-aligned test cases with expected and actual output snapshots

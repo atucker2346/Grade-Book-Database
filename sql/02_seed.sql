@@ -6,9 +6,9 @@ INSERT INTO Student (first_name, last_name) VALUES
   ('Carol', 'Quinn'),
   ('Dan', 'Brown');
 
-INSERT INTO Course (code, title) VALUES
-  ('CS101', 'Introduction to Databases'),
-  ('MATH200', 'Calculus II');
+INSERT INTO Course (department, course_number, title, semester, year) VALUES
+  ('CS', 101, 'Introduction to Databases', 'Spring', 2026),
+  ('MATH', 200, 'Calculus II', 'Spring', 2026);
 
 INSERT INTO Enrollment (student_id, course_id) VALUES
   (1, 1), (2, 1), (3, 1), (4, 1),
